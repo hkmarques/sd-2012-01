@@ -1,0 +1,12 @@
+<component name="CopyrightManager">
+  <settings default="GNU General Public License">
+    <module2copyright />
+    <LanguageOptions name="JAVA">
+      <option name="fileTypeOverride" value="3" />
+      <option name="block" value="false" />
+    </LanguageOptions>
+    <LanguageOptions name="__TEMPLATE__">
+      <option name="block" value="false" />
+    </LanguageOptions>
+  </settings>
+</component>
