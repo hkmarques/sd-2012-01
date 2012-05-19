@@ -31,6 +31,7 @@ public class Main {
 
     /**
      * Ponto de entrada principal.
+     *
      * @param args parâmetros recebidos a partir da linha de comando
      */
     public static void main(String[] args) throws IOException {

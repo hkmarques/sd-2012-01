@@ -54,9 +54,9 @@ public class CalculadoraDistribuidaUDPServer extends CalculadoraDistribuidaServe
     protected void envieResposta(Resposta resposta) throws IOException {
         String msgResposta = resposta.toString();
         DatagramPacket reply = new DatagramPacket(msgResposta.getBytes(),
-                                                  msgResposta.length(),
-                                                  request.getAddress(),
-                                                  port);
+                msgResposta.length(),
+                request.getAddress(),
+                port);
 
         obtenhaConexaoUDP(port).send(reply);
     }
@@ -79,6 +79,6 @@ public class CalculadoraDistribuidaUDPServer extends CalculadoraDistribuidaServe
      * @throws SocketException
      */
     private DatagramSocket obtenhaConexaoUDP(int port) throws SocketException {
-        return conexao != null ? (DatagramSocket)conexao : new DatagramSocket(port);
+        return conexao != null ? (DatagramSocket) conexao : new DatagramSocket(port);
     }
 }

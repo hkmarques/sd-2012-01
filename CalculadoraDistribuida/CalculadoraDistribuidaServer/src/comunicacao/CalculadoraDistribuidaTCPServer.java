@@ -73,6 +73,6 @@ public class CalculadoraDistribuidaTCPServer extends CalculadoraDistribuidaServe
      * @throws IOException
      */
     private ServerSocket obtenhaConexaoTCP(int port) throws IOException {
-        return conexao != null ? (ServerSocket)conexao : new ServerSocket(port);
+        return conexao != null ? (ServerSocket) conexao : new ServerSocket(port);
     }
 }
