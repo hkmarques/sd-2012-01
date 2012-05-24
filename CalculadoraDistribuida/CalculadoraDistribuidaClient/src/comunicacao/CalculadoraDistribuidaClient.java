@@ -54,7 +54,7 @@ public abstract class CalculadoraDistribuidaClient {
             conexao = obtenhaConexao(host, port);
 
             // Enviando requisicão.
-            System.out.println(requisicao.toString());
+            System.out.printf("Enviando requisição %s\n", requisicao);
             envieRequisicao(host, port, requisicao.toString());
 
             // Lendo resposta do servidor.

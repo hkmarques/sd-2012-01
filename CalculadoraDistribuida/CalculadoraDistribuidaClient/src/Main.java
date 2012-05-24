@@ -25,7 +25,7 @@ import utils.ConversorParametros;
 public class Main {
 
     // Identificando o servidor.
-    static String host = "localhost";
+    static String host = "BASE";
 
     // A porta da aplicaćão no servidor.
     static int port = 15000;
@@ -55,7 +55,7 @@ public class Main {
         Resposta resposta = cliente.gerencieRequisicao(host, port, requisicao);
 
         if (resposta != null) {
-            System.out.printf("Resposta do servidor: %.3f\n", resposta.getResultado());
+            System.out.printf("Resposta do servidor (Requisição %s): %s = %.3f\n", requisicao.getID().toString().toUpperCase(), requisicao.toString().substring(requisicao.toString().indexOf(' ')), resposta.getResultado());
         }
     }
 }
