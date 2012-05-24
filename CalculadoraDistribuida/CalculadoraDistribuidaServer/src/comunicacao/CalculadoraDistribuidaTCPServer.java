@@ -39,6 +39,8 @@ public class CalculadoraDistribuidaTCPServer extends CalculadoraDistribuidaServe
         Socket clientSocket = obtenhaConexaoTCP(port).accept();
         connection = new Connection(clientSocket);
         String dados = connection.leiaDados();
+
+        System.out.printf("Requisição recebida: %s\n", dados);
         return ConversorParametros.obtenhaRequisicao(dados);
     }
 
