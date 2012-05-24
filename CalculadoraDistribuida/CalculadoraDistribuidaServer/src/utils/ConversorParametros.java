@@ -54,7 +54,15 @@ public class ConversorParametros {
      * @return a operacão
      */
     public static EnumOperacao obtenhaOperacao(String operacao) {
-        return EnumOperacao.valueOf(operacao);
+        EnumOperacao enumOperacao;
+        try {
+            enumOperacao = EnumOperacao.valueOf(operacao.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            EnumOperacao resultadoConversor = ConversorOperacao.obtenhaOperacao(operacao);
+            enumOperacao = resultadoConversor != null ? resultadoConversor : EnumOperacao.SOMA;
+        }
+
+        return enumOperacao;
     }
 
     /**

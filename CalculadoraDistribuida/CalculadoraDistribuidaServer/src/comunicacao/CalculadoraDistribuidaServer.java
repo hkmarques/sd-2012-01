@@ -53,6 +53,8 @@ public abstract class CalculadoraDistribuidaServer {
 
             // Enviando resposta para o cliente.
             envieResposta(resposta);
+
+            System.out.printf("Resposta enviada (requisição %s): %.3f\n", requisicao.getID().toString().toUpperCase(), resposta.getResultado());
         }
     }
 
