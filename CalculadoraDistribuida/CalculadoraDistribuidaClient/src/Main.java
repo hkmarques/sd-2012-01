@@ -25,7 +25,7 @@ import utils.ConversorParametros;
 public class Main {
 
     // Identificando o servidor.
-    static String host = "BASE";
+    static String host = "HERICKNB";
 
     // A porta da aplicaćão no servidor.
     static int port = 15000;

@@ -91,7 +91,7 @@ public class ConversorParametros {
      * @return uma instância de Requisicao
      */
     public static Requisicao obtenhaRequisicao(String conteudoRequisicao) {
-        String[] dados = conteudoRequisicao.split(" ");
+        String[] dados = conteudoRequisicao.trim().split(" ");
         return obtenhaRequisicao(dados[0], dados[1], dados[3], dados[2]);
     }
 }
