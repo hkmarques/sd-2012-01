@@ -4,6 +4,8 @@
       <root url="jar://$PROJECT_DIR$/../ComumProfileMatcher/out/artifacts/ComumProfileMatcher_jar/ComumProfileMatcher.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../ComumProfileMatcher/src" />
+    </SOURCES>
   </library>
 </component>

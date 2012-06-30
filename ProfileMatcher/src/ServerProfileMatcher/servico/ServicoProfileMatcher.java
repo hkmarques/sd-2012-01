@@ -1,8 +1,10 @@
-package servico;
+package ServerProfileMatcher.servico;
 
 import ComumProfileMatcher.interfaces.dados.DTOProduto;
 import ComumProfileMatcher.interfaces.dados.DTORequisicao;
 import ComumProfileMatcher.interfaces.servicos.ProfileMatcher;
+import ServerProfileMatcher.bd.FabricaDeRepositorios;
+import ServerProfileMatcher.interfaces.IRepositorioProduto;
 
 import java.util.Set;
 
@@ -25,5 +27,15 @@ public class ServicoProfileMatcher implements ProfileMatcher {
 
     public Set<DTOProduto> consulteProdutosCompativeis(DTORequisicao dtoRequisicao) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    // -----------------------------------------------------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
+    // ------------------------------------- MÉTODOS AUXILIARES --------------------------------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
+
+    private IRepositorioProduto RepositorioProduto() {
+        return FabricaDeRepositorios.crieRepositorioProduto();
     }
 }

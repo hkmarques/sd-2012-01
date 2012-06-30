@@ -1,4 +1,4 @@
-package negocio;
+package ServerProfileMatcher.negocio;
 
 import ComumProfileMatcher.utilitarios.PalavrasChave;
 
