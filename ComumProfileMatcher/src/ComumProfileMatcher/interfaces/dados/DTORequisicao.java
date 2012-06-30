@@ -1,4 +1,4 @@
-package interfaces.dados;
+package ComumProfileMatcher.interfaces.dados;
 
 import java.util.HashSet;
 import java.util.Set;

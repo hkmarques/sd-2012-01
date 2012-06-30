@@ -1,4 +1,4 @@
-package utilitarios;
+package ComumProfileMatcher.utilitarios;
 
 public class FaixaDeValores<Tipo> {
 

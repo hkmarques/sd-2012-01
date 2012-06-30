@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ComumProfileMatcher">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../ComumProfileMatcher/out/artifacts/ComumProfileMatcher_jar/ComumProfileMatcher.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

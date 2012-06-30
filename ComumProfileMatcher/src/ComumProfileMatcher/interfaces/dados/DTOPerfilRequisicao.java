@@ -1,6 +1,6 @@
-package interfaces.dados;
+package ComumProfileMatcher.interfaces.dados;
 
-import utilitarios.PalavrasChave;
+import ComumProfileMatcher.utilitarios.PalavrasChave;
 
 import java.util.Set;
 

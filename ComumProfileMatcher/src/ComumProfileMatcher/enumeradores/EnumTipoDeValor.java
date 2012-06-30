@@ -1,4 +1,4 @@
-package enumeradores;
+package ComumProfileMatcher.enumeradores;
 
 public enum EnumTipoDeValor {
 

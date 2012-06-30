@@ -1,4 +1,4 @@
-package utilitarios;
+package ComumProfileMatcher.utilitarios;
 
 import java.util.*;
 

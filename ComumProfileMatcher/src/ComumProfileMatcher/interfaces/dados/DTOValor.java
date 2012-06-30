@@ -1,7 +1,7 @@
-package interfaces.dados;
+package ComumProfileMatcher.interfaces.dados;
 
-import enumeradores.EnumTipoDeValor;
-import utilitarios.FaixaDeValores;
+import ComumProfileMatcher.enumeradores.EnumTipoDeValor;
+import ComumProfileMatcher.utilitarios.FaixaDeValores;
 
 import java.util.Set;
 

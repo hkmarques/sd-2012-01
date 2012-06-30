@@ -1,11 +1,13 @@
-package interfaces.servicos;
+package ComumProfileMatcher.interfaces.servicos;
 
-import interfaces.dados.DTOProduto;
-import interfaces.dados.DTORequisicao;
+import ComumProfileMatcher.interfaces.dados.DTOProduto;
+import ComumProfileMatcher.interfaces.dados.DTORequisicao;
 
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 import java.util.Set;
 
-public interface ProfileMatcher {
+public interface ProfileMatcher extends Remote {
 
     // -----------------------------------------------------------------------------------------------------------------
     // -----------------------------------------------------------------------------------------------------------------
@@ -13,13 +15,13 @@ public interface ProfileMatcher {
     // -----------------------------------------------------------------------------------------------------------------
     // -----------------------------------------------------------------------------------------------------------------
 
-    void cadastreProduto(DTOProduto produto);
+    void cadastreProduto(DTOProduto produto) throws RemoteException;
 
-    void atualizeProduto(DTOProduto produto);
+    void atualizeProduto(DTOProduto produto) throws RemoteException;
 
-    DTOProduto consulteProduto(int codigo);
+    DTOProduto consulteProduto(int codigo) throws RemoteException;
 
-    DTOProduto excluaProduto(int codigo);
+    DTOProduto excluaProduto(int codigo) throws RemoteException;
 
     // -----------------------------------------------------------------------------------------------------------------
     // -----------------------------------------------------------------------------------------------------------------
@@ -27,5 +29,5 @@ public interface ProfileMatcher {
     // -----------------------------------------------------------------------------------------------------------------
     // -----------------------------------------------------------------------------------------------------------------
 
-    Set<DTOProduto> consulteProdutosCompativeis(DTORequisicao requisicao);
+    Set<DTOProduto> consulteProdutosCompativeis(DTORequisicao requisicao) throws RemoteException;
 }

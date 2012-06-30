@@ -1,5 +1,7 @@
 package negocio;
 
+import ComumProfileMatcher.utilitarios.PalavrasChave;
+
 public class Produto {
 
     private int codigo;
