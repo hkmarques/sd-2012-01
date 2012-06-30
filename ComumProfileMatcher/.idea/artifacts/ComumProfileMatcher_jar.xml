@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ComumProfileMatcher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ComumProfileMatcher_jar</output-path>
+    <root id="archive" name="ComumProfileMatcher.jar">
+      <element id="module-output" name="ComumProfileMatcher" />
+    </root>
+  </artifact>
+</component>
