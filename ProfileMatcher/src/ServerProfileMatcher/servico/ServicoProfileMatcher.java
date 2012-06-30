@@ -3,7 +3,7 @@ package ServerProfileMatcher.servico;
 import ComumProfileMatcher.interfaces.dados.DTOProduto;
 import ComumProfileMatcher.interfaces.dados.DTORequisicao;
 import ComumProfileMatcher.interfaces.servicos.ProfileMatcher;
-import ServerProfileMatcher.bd.FabricaDeRepositorios;
+import ServerProfileMatcher.fabricas.FabricaDeRepositorios;
 import ServerProfileMatcher.interfaces.IRepositorioProduto;
 
 import java.util.Set;

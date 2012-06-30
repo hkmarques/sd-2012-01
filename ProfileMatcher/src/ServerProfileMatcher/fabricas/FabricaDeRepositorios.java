@@ -1,5 +1,6 @@
-package ServerProfileMatcher.bd;
+package ServerProfileMatcher.fabricas;
 
+import ServerProfileMatcher.bd.RepositorioProduto;
 import ServerProfileMatcher.interfaces.IRepositorioProduto;
 
 public class FabricaDeRepositorios {
