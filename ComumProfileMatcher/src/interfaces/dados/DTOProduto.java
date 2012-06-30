@@ -1,6 +1,6 @@
 package interfaces.dados;
 
-import negocio.PalavrasChave;
+import utilitarios.PalavrasChave;
 
 public class DTOProduto {
 
