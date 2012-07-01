@@ -7,13 +7,13 @@ import java.lang.reflect.Field;
 
 public class ConversorProduto {
 
-    public Produto converta(DTOProduto dtoProduto) {
+    public static Produto converta(DTOProduto dtoProduto) {
         Produto produto = new Produto(dtoProduto.getCodigo());
         copieValores(dtoProduto, produto);
         return produto;
     }
 
-    public DTOProduto converta(Produto produto) {
+    public static DTOProduto converta(Produto produto) {
         DTOProduto dtoProduto = new DTOProduto(produto.getCodigo());
         copieValores(produto, dtoProduto);
         return dtoProduto;
