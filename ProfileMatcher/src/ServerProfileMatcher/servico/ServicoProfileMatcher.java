@@ -10,19 +10,19 @@ import java.util.Set;
 
 public class ServicoProfileMatcher implements ProfileMatcher {
     public void cadastreProduto(DTOProduto produto) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        RepositorioProduto().cadastre(ConversorProduto.converta(produto));
     }
 
     public void atualizeProduto(DTOProduto produto) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        RepositorioProduto().atualize(ConversorProduto.converta(produto));
     }
 
-    public DTOProduto consulteProduto(int i) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    public DTOProduto consulteProduto(int codigo) {
+        return ConversorProduto.converta(RepositorioProduto().consulte(codigo));
     }
 
-    public DTOProduto excluaProduto(int i) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    public DTOProduto excluaProduto(int codigo) {
+        return ConversorProduto.converta(RepositorioProduto().exclua(RepositorioProduto().consulte(codigo)));
     }
 
     public Set<DTOProduto> consulteProdutosCompativeis(DTORequisicao dtoRequisicao) {
